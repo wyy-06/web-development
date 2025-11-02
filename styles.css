@@ -4,7 +4,7 @@ body{
 .title {
 	color: #5C6AC4;
 }
-/* ===== PROJECT SECTION FIX (1 hàng ngang) ===== */
+/* ===== PROJECT SECTION  ===== */
 #projects {
   background-color: #fff5f7;
   padding: 60px 20px;
@@ -52,6 +52,77 @@ body{
 .project h3 {
   margin-top: 10px;
   font-size: 1.1rem;
+}
+#notebook {
+  background-color: #fffaf0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#notebook h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.notebook-container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#noteInput {
+  width: 80%;
+  max-width: 600px;
+  height: 120px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: border 0.3s;
+}
+
+#noteInput:focus {
+  border-color: #ff7f50;
+}
+
+#addNoteBtn {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+#addNoteBtn:hover {
+  background-color: #ff9569;
+}
+
+#notesList {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.note {
+  background-color: white;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  font-size: 1rem;
 }
 
 .project p {
