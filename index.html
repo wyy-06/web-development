@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vong Vinh Nhi | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff6f6;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: #000;
+    }
+
+    /* Intro section (Hi, I'm Vinh Nhi) */
+    .flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .flex-container img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    .text-container {
+      max-width: 500px;
+    }
+
+    /* About Me section */
+    .about-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .about-images img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* Grid section */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .img-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .img-item p {
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Intro Section -->
+  <section id="about" class="about">
+    <div class="flex-container">
+      <img src="images/hi.gif" alt="About Me Photo">
+      <div class="text-container">
+        <h1>Hi, I'm Vinh Nhi</h1>
+        <p>Welcome to my personal website!</p>
+        <p>Here, you’ll find a brief introduction about me, my background, skills, and hobbies. This project is part of my Assignment 2 for my Computer Science class with Thầy Đăng, but I have put a lot of effort into making it personal and meaningful^^</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="aboutme">
+    <h2>About Me</h2>
+    <p style="text-align:center;">Here’s a glimpse of my world. Three images that represent what I love and who I am.</p>
+    <div class="about-images">
+      <img src="images/photo1.webp" alt="Photo 1">
+      <img src="images/photo2.jpg" alt="Photo 2">
+      <img src="images/photo3.jpg" alt="Photo 3">
+    </div>
+  </section>
+
+  <!-- Skills & Hobbies -->
+  <section id="background">
+    <div class="text-container">
+      <h3>Skills</h3>
+      <img src="images/bob.gif" alt="Bob GIF" style="width:120px;display:block;margin:auto;">
+      <ul>
+        <li>Video Editing (CapCut, Premiere)</li>
+        <li>Poster, Web Design (Canva, HTML)</li>
+        <li>Photographing, Sketching</li>
+      </ul>
+    </div>
+    <div class="text-container">
+      <h3>Hobbies</h3>
+      <p>
+        - Drawing <br>
+        - Watching K-Dramas and Cartoon <br>
+        - Playing Pikachu games <br>
+        - Walking with my dog <br>
+        - Eating bún bò <br>
+        - Sleeping
+      </p>
+    </div>
+  </section>
+  <section id="projects">
+  <h2>My Projects</h2>
+  <div class="project-row">
+    <div class="project">
+      <img src="images/project1.jpg" alt="Project 1">
+      <h3>Project One</h3>
+      <p><i>Created a Tank in DST class and won 1st race.</i></p>
+    </div>
+
+    <div class="project">
+      <img src="images/project2.jpg" alt="Project 2">
+      <h3>Project Two</h3>
+      <p><i>Problem Solving and Creating a Mask Dispenser.</i></p>
+    </div>
+
+    <div class="project">
+      <img src="images/project3.jpg" alt="Project 3">
+      <h3>Project Three</h3>
+      <p><i>Designed a flower-color change experiment for school project.</i></p>
+    </div>
+  </div>
+</section>
+  <section id="photos" class="photo-gallery">
+    <h2>Through my lens</h2>
+    <p class="intro">
+      I also love traveling and capturing the world through my lens. My goal for 2026 is to make some of my dream experiences come true: seeing the aurora in Iceland and shaking hands with a polar bear.
+    </p>
+
+    <div class="grid-container">
+      <div class="img-item">
+        <img src="images/sh.jpg" alt="Shanghai, 2025">
+        <p><em>Shanghai is such a beautiful place with a perfect blend of modern life and ancient architecture.</em></p>
+      </div>
+      <div class="img-item">
+        <img src="images/sg.jpg" alt="Saigon, 2025">
+        <p><em>This picture was taken in Saigon on the night of 30/4. Everyone was gathered to watch the fireworks, it was a very memorable night.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label>Name:</label><br>
+      <input type="text" id="name" required><br>
+      <label>Email:</label><br>
+      <input type="email" id="email" required><br>
+      <label>Message:</label><br>
+      <textarea id="message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
