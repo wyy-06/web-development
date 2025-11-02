@@ -178,7 +178,7 @@
   </section>
 
   <!-- Contact -->
-  <img src="images/stuart.gif" alt="Stuart GIF" style="width:120px;display:block;margin:center;">
+  <img src="images/stuart.gif" alt="Stuart GIF" style="width:120px;display:block;center:auto;">
   <section id="contact">
     <h2>Contact Me</h2>
     <form id="contactForm">
@@ -191,17 +191,45 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
-  <!-- Notebook -->
-  <section id="notebook">
-  <h2>My Notebook</h2>
-  <p><i>Send me an anonymous message here!</i></p>
+  <!-- NOTEBOOK -->
+  <img src="images/23.gif" alt="23 GIF" style="width:120px;display:block;center:auto;">
+<body>
+<h1>My Notebook</h1>
 
-  <div class="notebook-container">
-    <textarea id="noteInput" placeholder="Type your note here..."></textarea>
-    <button id="addNoteBtn">Add Note</button>
+  <textarea id="noteInput" placeholder="Type your note here..."></textarea><br>
+  <button id="addNoteBtn">Add Note</button>
+
+  <div id="notes">
+    <h2>Your Notes</h2>
   </div>
-  <div id="notesList"></div>
-</section>
+
+  <script>
+    // Get references to the DOM elements
+    const noteInput = document.getElementById('noteInput');
+    const addNoteBtn = document.getElementById('addNoteBtn');
+    const notesDiv = document.getElementById('notes');
+
+    // When button is clicked
+    addNoteBtn.addEventListener('click', function() {
+      const noteText = noteInput.value.trim(); // remove extra spaces
+
+      if (noteText === '') {
+        alert('Please type your note before adding.');
+        return;
+      }
+
+      // Create a new paragraph element for the note
+      const note = document.createElement('div');
+      note.classList.add('note');
+      note.textContent = noteText;
+
+      // Add the note to the notes section
+      notesDiv.appendChild(note);
+
+      // Clear the textarea
+      noteInput.value = '';
+    });
+  </script>
   
 </body>
 </html>
